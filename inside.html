@@ -18,9 +18,16 @@
 
 
  
+    <!-- <a-sphere rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000" src="earth_atmos_4096.jpg" radius="1" segments-height="53"
+    gps-entity-place="latitude: 51.670286; longitude: -1.290516;">
+  </a-sphere> -->
+
+
 <a-sphere rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000" src="earth_atmos_4096.jpg" radius="1" segments-height="53"
   gps-entity-place="latitude: 51.670286; longitude: -1.290516;">
+    <a-animation attribute="rotation" dur="10000" to="0 360 0" repeat="indefinite" easing="linear"></a-animation>
 </a-sphere>
+
 
 <!-- 
     <a-box material="color: yellow" gps-entity-place="latitude: 51.669414; longitude: -1.290152" position="0 00 0"/> -->
