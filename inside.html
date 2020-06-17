@@ -33,14 +33,16 @@
 <!-- <a-entity gps-entity-place="latitude: 51.670286; longitude: -1.290516;"> helen-->
 <a-entity gps-entity-place="latitude: 51.669732; longitude: -1.290273;">
 
-  <a-sphere src="earth_atmos_4096.jpg" radius="1" segments-height="53">
-    <a-animation attribute="rotation" dur="10000" to="0 360 0" repeat="indefinite" easing="linear"></a-animation>
+  <a-sphere src="earth_atmos_4096.jpg" radius="1" segments-height="53"
+  rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000" easing="linear">
+    
   </a-sphere>
 
 
   <!-- <a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 100000"> -->
-    <a-sphere src="moon.png" radius="0.1" segments-height="53" position="5 0 0">
-      <a-animation attribute="rotation" dur="100000" to="0 360 0" repeat="indefinite" easing="linear"></a-animation>
+    <a-sphere src="moon.png" radius="0.1" segments-height="53" position="5 0 0"
+    rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 100000" easing="linear">
+      <!-- <a-animation attribute="rotation" dur="100000" to="0 360 0" repeat="indefinite" easing="linear"></a-animation> -->
     </a-sphere>
   <!-- </a-entity>  -->
 
