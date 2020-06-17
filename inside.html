@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Shapes</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+  </head>
+
+  <body style="margin: 0; overflow: hidden;">
+    <a-scene
+      vr-mode-ui="enabled: false"
+      embedded
+      arjs="sourceType: webcam; debugUIEnabled: false;"
+    >
+
+
+ 
+<a-sphere rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000" src="earth_atmos_4096.jpg" radius="1" segments-height="53"
+  gps-entity-place="latitude: 51.670286; longitude: -1.290516;">
+</a-sphere>
+
+<!-- 
+    <a-box material="color: yellow" gps-entity-place="latitude: 51.669414; longitude: -1.290152" position="0 00 0"/> -->
+
+<!--  
+    <a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"
+    gps-entity-place="latitude: 51.670117; longitude: -1.290107;">
+      <a-sphere position="5 0 0" color="mediumseagreen"></a-sphere>
+    </a-entity> -->
+
+
+
+
+      <a-camera gps-camera rotation-reader> </a-camera>
+    </a-scene>
+  </body>
+</html>
